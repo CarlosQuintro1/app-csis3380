@@ -1,0 +1,497 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+
+
+.App-header {
+  background-color: #038f26;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.navbar {
+  background-color: #000000;
+  overflow: hidden;
+}
+
+.navbar-div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.navbar-ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.navbar-item {
+  padding-top: none;
+  margin-right: 10px;
+}
+
+.nav-link {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 10px 15px;
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  background-color: none;
+  list-style-type: disc;
+}
+
+.img-grid{
+  border-radius: 5%;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  grid-gap: 20px;
+  background-color: #ffffff;
+  padding: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.grid-item {
+  background-color: #fff;
+  border: none;
+  padding: 20px;
+  font-size: 1rem;
+  text-align: center;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin: 0 0 10px;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.grid-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+}
+
+.container {
+  display: flex;
+}
+
+.sidebar-container {
+  position: static;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 500px;
+  background-color: #f1f1f1;
+  overflow-y: scroll;
+}
+
+.sidebar {
+  padding: 10px;
+}
+
+.sidebar-title {
+  margin-top: 0;
+}
+
+.sidebar-article {
+  margin-bottom: 20px;
+}
+
+.sidebar-article-title {
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+
+.sidebar-article-description {
+  margin: 0;
+}
+
+.main-content {
+  flex-grow: 3;
+  padding-left: none; /* the width of the sidebar plus some extra padding */
+}
+
+.footer {
+  background-color: #000000;
+  color: #fff;
+  padding: 30px 0;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-section {
+  flex-basis: 30%;
+  margin-bottom: 30px;
+}
+
+.footer-section-title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.footer-section-content {
+  margin: 0;
+}
+
+.footer-section-content a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+.footer-section-content a:hover {
+  color: #ffd700;
+}
+
+.footer-bottom {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.footer-bottom-text {
+  font-size: 14px;
+  margin: 0;
+}
+
+.learn-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px;
+}
+
+.inv-learn{
+  background-color: #ffffff
+  ;
+}
+.learn-heading {
+  font-size: 36px;
+  margin-bottom: 30px;
+}
+
+.investments-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 50px;
+}
+
+.investment-card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+}
+
+.investment-title {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.investment-description {
+  font-size: 18px;
+  line-height: 1.5;
+  color: #444;
+}
+
+.about-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 50px 20px;
+}
+
+.about-heading {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.about-subheading {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+.about-paragraph {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 30px;
+}
+
+.about-list {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 30px;
+}
+
+.about-list-item {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+.about-team {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;}
+
+  /* Sign up form */
+
+  .SignUp {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  h2 {
+    margin-bottom: 20px;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  
+
+  .login-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  
+  label {
+    margin: 1rem 0;
+    font-weight: bold;
+  }
+  
+  input {
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+  }
+  
+  button {
+    padding: 0.5rem 1rem;
+    font-size: 1.2rem;
+    background-color: #0077cc;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #005fa3;
+  }
+
+
+  /* Align the chart and table horizontally */
+.chart-table-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Style the chart */
+.chart-container {
+  width: 700px;
+  height: 300px;
+  margin-right: 100px;
+}
+
+/* Style the table */
+table {
+  border-collapse: collapse;
+  margin-top: 20px;
+  font-size: 16px;
+  width: 100%;
+}
+
+th, td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+tr:hover {
+  background-color: #ddd;
+}
+
+
+/* Set default styles for the Discover section */
+main {
+  background-color: #ffffff;
+  padding: 50px 0;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 30px;
+}
+
+ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  margin-right: 30px;
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+
+a:hover {
+  color: #428bca;
+}
+
+h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+img {
+  border-radius: none;
+  margin-bottom: 20px;
+  max-width: 100%;
+  transition: all 0.3s ease-in-out;
+}
+
+img:hover {
+  transform: scale(1.05);
+}
+
+/* Set specific styles for each item in the Discover section */
+
+#gains{
+  max-width: 300px;
+  max-height: 250px;
+}
+
+header {
+  text-align: center;
+  margin-top: 50px;
+}
+
+
+.edit-button {
+  background-color: blue;
+  color: white;
+  border: none;
+  padding: 10px;
+  margin-right: 500px;
+  margin-left: 500px;
+}
+
+.delete-button {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 10px;
+  margin-right: 500px;
+  margin-left: 500px;
+}
+
+.logout-button {
+  background-color:#038f26;
+  color: white;
+  border: none;
+  padding: 10px;
+  margin-right: 500px;
+  margin-left: 500px;
+
+}
+
+
+label{
+  margin-left: 500px;
+  width: 50%;
+  padding: 10px;
+}
